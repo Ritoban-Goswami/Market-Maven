@@ -17,6 +17,8 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import Image from "next/image";
+import headerLogo from "@/public/headerLogo.png";
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -40,7 +42,9 @@ export default function Nav() {
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <Box>Logo</Box>
+          <Box>
+            <Image src={headerLogo} alt="Market Maven Logo" width={210} />
+          </Box>
 
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
