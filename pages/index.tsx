@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Hero from "@/components/Hero";
+import Categories from "@/components/Categories";
 import { Inter } from "next/font/google";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <div>
         <Hero />
+        <Categories />
       </div>
     </>
   );
